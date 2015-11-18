@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Spotlight by DeepVision</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+    <style>
+        #fashion {
+            opacity: 0.6;
+            transition: opacity 0.2s ease-in-out;
+            -moz-transition: opacity 0.2s ease-in-out;
+            -webkit-transition: opacity 0.2s ease-in-out;
+        }
+        #fashion:hover {
+            opacity: 1;
+            transition: opacity .8s ease-in-out;
+            -moz-transition: opacity .8s ease-in-out;
+            -webkit-transition: opacity .8s ease-in-out;
+        }
+        #celeb {
+            position:relative;
+            height: 420px;
+        }
+        
+#celeb img {
+  position:absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#celeb img.top:hover {
+  opacity:0;
+}
+
+    </style>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><img src="images/logo.png" style="margin-top:5px"/><a href="index.html"></a></h1>
+<!--
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+-->
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Spotlight</h2>
+							<p>Shine a spotlight<br />
+							to showcase more information<br />
+							about the content you create</p>
+							<ul class="actions">
+								<li><a href="#three" class="button special">Sign Up Now!</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style5 special fade-up">
+						<div class="container">
+							<header class="major">
+								<h2>Our Solution</h2>
+								<p>Augment your images with cutting-edge technology to tell engaging stories and captivate your audience.</p>
+							</header>
+							<div class="box alt">
+								<div class="row uniform">
+									<section class="4u 10u(medium) 12u$(xsmall)">
+										<span class="icon alt major fa-info-circle"></span>
+										<h4>Real Time Information</h4>
+										<p>We automatically curate real-time information from reputable sources online and make it available at your fans' fingertips</p>
+									</section>
+									<section class="4u 10u$(medium) 12u$(xsmall)">
+										<span class="icon alt major fa-hourglass-1"></span>
+										<h4>Increase visit duration</h4>
+										<p>Allow users to discover relevant content to enrich their experience. We help users have access to information on your platform so they stay on it for longer.</p>
+									</section>
+									<section class="4u$ 10u(medium) 12u$(xsmall)">
+										<span class="icon alt major fa-leaf"></span>
+										<h4>Create EverGreen Content</h4>
+										<p>Refresh your site's experience with evergreen content. Let your readers relive your best content based on what they choose to interact with.</p>
+									</section>
+								</div>
+							</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style2 special fade">
+						<header class="major">
+							<h2>Spotlight In Action</h2>
+						</header>
+						<section class="spotlight">
+							<div class="image" id="fashion"><iframe src="fashionFrame.html" width="100%" height="350px;"scrolling="no"><i>Hover/Tap the Jacket to discover the spotlight!</i></iframe><i>Hover/Tap the Jacket to discover the spotlight!</i></div><div class="content">
+								<h2>Spotlight Products for<br />
+								Instant Purchase</h2>
+								<p>Easily allow users to discover products which they want more information about and buy them right away!</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image" id="celeb">  <img class="bottom" src="images/spotlight2.png" />
+  <img class="top" src="images/kim.png" usemap="#map" id="kim" onmousedown="this.src='images/spotlight2.png'"/></div><div class="content">
+								<h2>Spotlight People for<br />
+								Instant Information</h2>
+								<p>In a new age visual web, stimulate your users with real time information about people they discover.</p>
+							</div>
+						</section>
+<!--
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>Spotlight Anything...<br />
+								Infinite Possibilities</h2>
+								<p>We allow the content creators to augment their images and design novel innovative experiences curated towards their audience.</p>
+							</div>
+						</section>
+-->
+					</section>
+					<section id="three" class="wrapper style3 special fade">
+						<div class="container">
+							<header>
+								<h2>Unleash your Images</h2>
+								<p>Sign-up now to be one of the Beta-Testers for Spotlight and gain early accesss!</p>
+							</header>
+							<form method="post" action="http://formspree.io/contact@deepvision.co" class="container 50%">
+								<div class="row uniform 50%">
+									<div class="8u 12u$(medium)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+									<div class="4u 12u$(medium)"><input type="submit" value="Sign-Up" class="fit special" /></div>
+								</div>
+							</form>
+						</div>
+					</section>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="http://www.twitter.com/deepvisionco" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="http://deepvision.co" class="icon fa-globe"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:contact@deepvision.co" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+                            <a href="http://deepvision.co" target="_blank"><li>&copy; DeepVision</li></a>
+						</ul>
+					</footer>
+
+			</div>
+<map name="map">
+    <area shape="rect" coords="593, 442, 747, 526" onmouseover="ighover()" onmousedown="ighover()" onmouseout="defaultpic()"/>
+    <area shape="rect" coords="448, 441, 592, 526" onmouseover="youtubehover()" onmousedown="youtubehover()" onmouseout="defaultpic()"/>
+    <area shape="rect" coords="301, 440, 448, 528" onmouseover="newshover()" onmousedown="newshover()" onmouseout="defaultpic()"/>
+    <area shape="rect" coords="148, 439, 301, 528" onmouseover="twitterhover()" onmousedown="twitterhover()" onmouseout="defaultpic()" />
+    <area shape="rect" coords="1, 440, 147, 528" onmouseover="wikihover()" onmousedown="wikihover()" onmouseout="defaultpic()"/>
+</map>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            <script src="assets/js/imageMapResizer.min.js"></script>
+            <script>
+                $('map').imageMapResize();
+                function wikihover()
+                 {
+                   $("#kim").attr('src', 'images/wikioverlay.png');
+                 }
+                function youtubehover()
+                 {
+                   $("#kim").attr('src', 'images/youtubeoverlay.png');
+                 }
+                function newshover()
+                 {
+                   $("#kim").attr('src', 'images/newsoverlay.png');
+                 }
+                function twitterhover()
+                 {
+                   $("#kim").attr('src', 'images/twitteroverlay.png');
+                 }
+                function ighover()
+                 {
+                   $("#kim").attr('src', 'images/igoverlay.png');
+                 }
+                function defaultpic()
+                 {
+                   $("#kim").attr('src', 'images/kim.png');
+                 }
+                function fashionmo(x){
+            setTimeout(function()
+                {
+                    x.span="Hover to discover"
+                },200);
+                }
+                
+            </script>
+
+	</body>
+</html>
