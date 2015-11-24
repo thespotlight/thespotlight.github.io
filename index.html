@@ -6,6 +6,14 @@
 -->
 <html>
 	<head>
+        <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="https://checkout.stripe.com/checkout.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 		<title>Spotlight by DeepVision</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,12 +30,6 @@
             transition: opacity 0.2s ease-in-out;
             -moz-transition: opacity 0.2s ease-in-out;
             -webkit-transition: opacity 0.2s ease-in-out;
-        }
-        #fashion:hover {
-            opacity: 0.6;
-            transition: opacity .8s ease-in-out;
-            -moz-transition: opacity .8s ease-in-out;
-            -webkit-transition: opacity .8s ease-in-out;
         }
         #celeb {
             opacity: 1;
@@ -164,6 +166,8 @@
 					</footer>
 
 			</div>
+                <script src="assets/js/imageMapResizer.min.js"></script>
+            
 <map name="map">
     <area shape="rect" coords="593, 442, 747, 526" onmouseover="ighover()" onmousedown="ighover()" onmouseout="defaultpic()"/>
     <area shape="rect" coords="448, 441, 592, 526" onmouseover="youtubehover()" onmousedown="youtubehover()" onmouseout="defaultpic()"/>
@@ -175,18 +179,7 @@
       <area shape="poly" coords="417, 184, 410, 200, 423, 292, 370, 319, 449, 450, 450, 528, 470, 592, 534, 598, 512, 249, 466, 228, 442, 213, 423, 181" target="_blank" onmousedown="jacketTap()" onmouseover="jacketHover()" onmouseout="defaultPic()"/>
    <area shape="poly" coords="342, 170, 311, 187, 275, 203, 240, 216, 258, 226, 227, 242, 193, 598, 246, 594, 317, 414, 335, 332" target="_blank" onmousedown="jacketTap()" onmouseover="jacketHover()" onmouseout="defaultPic()"/>
     </map>
-<button id="jacketClick" style="display:none"></button>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-            <script src="https://checkout.stripe.com/checkout.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-            <script src="assets/js/imageMapResizer.min.js"></script>
-            <script>
+    <script>
                 var jacketFlag = 0;
                 $('map').imageMapResize();
                 $('fashmap').imageMapResize();
@@ -252,13 +245,13 @@
         {
           jacketFlag = 1;
         }
-    
+
         function OpenInNewTab(url)
        {
           var win = window.open(url, '_blank');
           win.focus();
         }
-                
+
             </script>
 <script>
     var handler = StripeCheckout.configure({
@@ -288,5 +281,8 @@
 
   </script>
 
+<button id="jacketClick" style="display:none"></button>
+		<!-- Scripts -->
+            
 	</body>
 </html>
