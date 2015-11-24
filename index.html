@@ -14,6 +14,7 @@
             <script src="https://checkout.stripe.com/checkout.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+        <script id='imagescript'></script>
 		<title>Spotlight by DeepVision</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -142,7 +143,7 @@
 						<div class="container">
 							<header>
 								<h2>Unleash your Images</h2>
-								<p>Sign-up now to be one of the Beta-Testers for Spotlight and gain early accesss!</p>
+								<p>Sign-up now to be one of the Beta-Testers for Spotlight and gain early access!</p>
 							</header>
 							<form method="post" action="http://formspree.io/contact@deepvision.co" class="container 50%">
 								<div class="row uniform 50%">
@@ -179,7 +180,7 @@
       <area shape="poly" coords="417, 184, 410, 200, 423, 292, 370, 319, 449, 450, 450, 528, 470, 592, 534, 598, 512, 249, 466, 228, 442, 213, 423, 181" target="_blank" onmousedown="jacketTap()" onmouseover="jacketHover()" onmouseout="defaultPic()"/>
    <area shape="poly" coords="342, 170, 311, 187, 275, 203, 240, 216, 258, 226, 227, 242, 193, 598, 246, 594, 317, 414, 335, 332" target="_blank" onmousedown="jacketTap()" onmouseover="jacketHover()" onmouseout="defaultPic()"/>
     </map>
-    <script>
+    <script id="imagescript">
                 var jacketFlag = 0;
                 $('map').imageMapResize();
                 $('fashmap').imageMapResize();
