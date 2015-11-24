@@ -40,13 +40,13 @@
         }
     </style>
 	<body class="landing">
+        <img src='images/jacketOverlay.png' style="display:none"/>
         <img src='images/wikioverlay.png' style="display:none"/>
         <img src='images/youtubeoverlay.png' style="display:none"/>
         <img src='images/twitteroverlay.png' style="display:none"/>
         <img src='images/igoverlay.png' style="display:none"/>
         <img src='images/Kim.png' style="display:none"/>
         <img src='images/newsoverlay.png' style="display:none"/>
-        <img src='images/jacketOverlay.png' style="display:none"/>
         <img src='images/spotlight2.png' style="display:none"/>
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -187,7 +187,7 @@
       <area shape="poly" coords="417, 184, 410, 200, 423, 292, 370, 319, 449, 450, 450, 528, 470, 592, 534, 598, 512, 249, 466, 228, 442, 213, 423, 181" target="_blank" onmousedown="jacketTap()" onmouseover="jacketHover()" onmouseout="defaultPic()"/>
    <area shape="poly" coords="342, 170, 311, 187, 275, 203, 240, 216, 258, 226, 227, 242, 193, 598, 246, 594, 317, 414, 335, 332" target="_blank" onmousedown="jacketTap()" onmouseover="jacketHover()" onmouseout="defaultPic()"/>
     </map>
-    <script id="imagescript">
+<script id="imagescript">
                 var jacketFlag = 0;
                 $('map').imageMapResize();
                 $('fashmap').imageMapResize();
@@ -215,13 +215,16 @@
                  {
                    $("#kim").attr('src', 'images/Kim.png');
                  }
-                function fashionmo(x){
-            setTimeout(function()
-                {
-                    x.span="Hover to discover"
-                },200);
-                }
-                function defaultPic()
+               function jacketHover()
+               {
+                 if(typeof window.orientation == 'undefined' && jacketFlag != 1)
+                 {
+                   $("#fash").attr('src', 'images/jacketOverlay.png');
+                   setJacketFlag();
+                 }
+               }
+                
+    function defaultPic()
        {
            jacketFlag = 0;
             $("#fash").attr('src', 'images/fashion.png');
@@ -241,14 +244,6 @@
          }
 
        }
-       function jacketHover()
-       {
-         if(typeof window.orientation == 'undefined' && jacketFlag != 1)
-         {
-           $("#fash").attr('src', 'images/jacketOverlay.png');
-           setJacketFlag();
-         }
-       }
         function setJacketFlag()
         {
           jacketFlag = 1;
@@ -260,7 +255,7 @@
           win.focus();
         }
 
-            </script>
+</script>
 
 
 <button id="jacketClick" style="display:none"></button>
